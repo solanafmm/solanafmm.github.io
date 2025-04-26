@@ -1,0 +1,167 @@
+{
+  "settings": {
+    "name": "solanafmm",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.18",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/solanafm-favicon.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://solanafmm.github.io/sitemap.xml/",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://solanafmm.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 3,
+    "versionPublish": "5.9.18"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "SolanaFM | Next-Gen Solana Explorer",
+        "meta_descr": "SolanaFM's blockchain explorer offers a user-friendly interface to explore the Solana blockchain. Users can track transactions, view block details, and monitor network statistics in real-time.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://solana.fm/?cluster=mainnet-alpha\"><img src=\"@PROJECT_PATH@/assets/images/solanafm.png\" alt=\"Solanafm\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "uJssLph14D",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://solana.fm/?cluster=mainnet-alpha\"><img src=\"@PROJECT_PATH@/assets/images/solanafm.png\" alt=\"Solanafm\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "uJssLymJjO",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-1"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://solana.fm/\" class=\"text-primary\">SolanaFM</a> | Next-Gen Solana Explorer</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://solana.fm/\" class=\"text-primary\">SolanaFM</a>: Revolutionizing Blockchain Exploration for the Solana Ecosystem</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the rapidly evolving world of blockchain technology, transparency and accessibility are paramount. SolanaFM, a blockchain explorer and indexing platform, has emerged as a pivotal tool for the Solana ecosystem. Founded in 2021 by three Singapore Management University students, SolanaFM aims to provide developers and users with intuitive and efficient tools to interact with the Solana blockchain. ​<br><br>Core Offerings of <a href=\"https://solanafmm.github.io/\" class=\"text-primary\">SolanaFM</a><br>1. Blockchain Explorer<br>SolanaFM's blockchain explorer offers a user-friendly interface to explore the Solana blockchain. Users can track transactions, view block details, and monitor network statistics in real-time. The explorer provides insights into transaction histories, smart contracts, and token information, making it an essential tool for developers and users alike. ​<br><br>2. Indexing as a Service<br>Beyond being a blockchain explorer, SolanaFM offers indexing services that allow developers to efficiently gather and access Solana data. This service enables the creation of custom data structures to retrieve records based on specific attributes, facilitating the development of decentralized applications (dApps) and other blockchain-based solutions. ​<br><br>3. Developer Portal<br>The <a href=\"https://solanafmm.github.io/\" class=\"text-primary\">SolanaFM</a> Developer Portal is a comprehensive platform that provides developers with tools to index and query on-chain data. Features include on-demand indexing, historical data retrieval, and the ability to backfill data within specified block ranges. This portal empowers developers to build and scale applications on the Solana blockchain with ease. ​<br><br>Strategic Acquisitions and Growth<br>In September 2024, SolanaFM was acquired by Jupiter, a leading decentralized exchange aggregator on the Solana blockchain. This acquisition aims to enhance Solana's data and infrastructure capabilities, accelerating development and improving functionalities for the Solana community. Jupiter's acquisition of SolanaFM signifies a strategic move to bolster the Solana ecosystem's infrastructure and data services. ​<br><br>Vision and Future Plans<br>SolanaFM's mission is to simplify blockchain exploration and data access for developers and users. By providing intuitive tools and services, SolanaFM aims to foster innovation and adoption within the Solana ecosystem. The platform's expansion into other blockchains, such as Aptos, reflects its commitment to supporting the broader blockchain community. ​<br><br><br>Conclusion<br><a href=\"https://solanafmm.github.io/\" class=\"text-primary\">SolanaFM</a> stands as a testament to the power of innovation and collaboration within the blockchain space. Through its comprehensive suite of tools and services, SolanaFM empowers developers and users to navigate the Solana blockchain with ease and efficiency. As the platform continues to evolve and expand, it remains a cornerstone of the Solana ecosystem, driving growth and fostering a more accessible blockchain experience for all.<br><br>The Role of SolanaFM in the Solana Ecosystem<br>SolanaFM was created with the aim of becoming the “Google of Solana”—a powerful analogy that encapsulates its mission: making blockchain data easily searchable, readable, and insightful. Unlike raw blockchain data that is often technical and difficult to interpret, SolanaFM re-packages this data into clean, navigable insights tailored for users and developers alike.<br><br>It fills an essential infrastructure gap in Solana’s growing ecosystem, which has historically suffered from the complexity and difficulty of querying transaction-level data due to Solana’s parallelized execution model. SolanaFM effectively makes that data usable, trackable, and actionable.<br><br>Technical Innovations Behind SolanaFM<br>1. Parallelized Indexing Engine<br>One of SolanaFM’s most critical technical breakthroughs is its custom-built indexing engine designed specifically for Solana’s unique architecture. Solana processes transactions in parallel (using a system called Sealevel), which makes linear block-by-block tracking more complicated than in blockchains like Ethereum. SolanaFM's engine can handle this complexity by:<br><br>Decoding Solana’s binary formats (Borsh and MessagePack)<br><br>Dissecting parallel transactions and atomic composability<br><br>Tracking account state changes in real-time<br><br>Indexing at granular levels (e.g., per DApp, per user wallet, per instruction)<br><br>This gives SolanaFM a serious edge in speed and accuracy over more traditional explorers.<br><br>2. Modular API Architecture<br>SolanaFM provides a GraphQL-based API as well as REST endpoints, allowing developers to query historical and live data with extreme flexibility. This enables:<br><br>Wallet activity tracking<br><br>Smart contract state monitoring<br><br>NFT metadata and trading history<br><br>Token balances and transfers<br><br>Instruction decoding (important for composable DeFi)<br><br>This API-first approach makes SolanaFM highly customizable and a go-to choice for DApp developers who want tailored analytics or wallet monitoring functionality.<br><br>Key Features for Different User Types<br>🔍 For Everyday Users<br>Wallet Tracking: Easily look up public wallet addresses to view recent transactions, token balances, NFTs, and activity history.<br><br>Transaction Decoder: Solana transactions often include multiple instructions in a single transaction. SolanaFM decodes these to show exactly what happened step-by-step.<br><br>NFT Explorer: View full metadata, ownership, minting history, and marketplace activity for NFTs in a clean UI.<br><br>Token Explorer: View Solana SPL token stats including holders, supply, and top transfers.<br><br>🧑‍💻 For Developers<br>On-Demand Indexing: Developers can ask SolanaFM to index specific DApps or accounts not covered by default.<br><br>Historical State Access: Need to know what an account looked like 3 months ago? SolanaFM supports that with historical state snapshots.<br><br>Instruction Insights: Rather than showing “Unknown Instruction,” SolanaFM’s parser tells you exactly what smart contract calls occurred.<br><br>📊 For Analysts &amp; Researchers<br>Chain-Wide Stats: Block production times, validator performance, transaction volume trends, and real-time network throughput.<br><br>DeFi Analytics: Track liquidity movements, top token swaps, DEX usage, and liquidity provider rewards.<br><br>Alerts &amp; Subscriptions: Get notified when whale wallets move, or when large DeFi interactions occur.<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "uJssNhFIT7",
+          "_anchor": "article07-2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
